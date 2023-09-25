@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einkommenssteuer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="bigWrapper">
+      <h1>Einkommenssteuer-Berechnung</h1>
+      <div class="wrapper">
+        <div class="smallWrapper">
+          <label for="year">Jahr</label>
+          <select id="year">
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+
+        <div class="smallWrapper">
+          <label for="zvE">zvE</label>
+          <div class="smallerWrapper">
+            <input
+              type="number"
+              name="zvE"
+              id="person1"
+              placeholder="person1"
+            />
+            <input
+              type="number"
+              name="zvE"
+              id="person2"
+              placeholder="person2"
+            />
+          </div>
+        </div>
+
+        <div class="smallWrapper">
+          <label for="aloneTogether">Einzeln oder Zusammen</label>
+
+          <label for="alone"
+            ><input
+              type="radio"
+              name="aloneTogether"
+              value="einzeln"
+              id="alone"
+              onclick="change(value)"
+            />
+            Einzeln</label
+          >
+
+          <label for="together"
+            ><input
+              type="radio"
+              name="aloneTogether"
+              value="zusammen"
+              id="together"
+              onclick="change(value)"
+            />
+            Zusammen</label
+          >
+        </div>
+      </div>
+      <button onclick="calculate()">Rechnen</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

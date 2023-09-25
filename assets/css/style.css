@@ -1,0 +1,23 @@
+.bigWrapper {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.bigWrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.bigWrapper .wrapper .smallWrapper {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.bigWrapper .wrapper .smallWrapper .smallerWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.bigWrapper .wrapper .smallWrapper .smallerWrapper input:nth-of-type(2) {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
